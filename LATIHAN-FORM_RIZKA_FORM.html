@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form HIMATIK</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #4c1d95);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 500px;
+            margin: 50px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            text-align: center;
+            color: #4c1d95;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 8px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        textarea {
+            resize: none;
+            height: 60px;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #1e3a8a, #7c3aed);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 45%;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        .button-group {
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Form Pendaftaran HIMATIK</h2>
+
+    <form>
+        <table>
+
+            <tr>
+                <td>Nama Lengkap</td>
+                <td><input type="text" name="nama"></td>
+            </tr>
+
+            <tr>
+                <td>NIM</td>
+                <td><input type="text" name="nim"></td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <input type="radio" name="jk"> Laki-laki
+                    <input type="radio" name="jk"> Perempuan
+                </td>
+            </tr>
+
+            <tr>
+                <td>Minat</td>
+                <td>
+                    <input type="checkbox"> Programming
+                    <input type="checkbox"> Design
+                    <input type="checkbox"> Networking
+                </td>
+            </tr>
+
+            <tr>
+                <td>Jurusan</td>
+                <td>
+                    <select>
+                        <option>Teknik Informatika</option>
+                        <option>Sistem Informasi</option>
+                        <option>Teknik Komputer</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Alamat</td>
+                <td><textarea></textarea></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="button-group">
+                    <input type="submit" value="Daftar" class="btn">
+                    <input type="reset" value="Reset" class="btn">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</div>
+
+</body>
+</html>
